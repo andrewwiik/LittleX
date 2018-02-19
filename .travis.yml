@@ -1,0 +1,20 @@
+os: osx
+language: objective-c
+sudo: false
+
+env:
+  global:
+    # $THEOS is absolutely needed for theos to even be found
+    - THEOS=~/theos
+
+before_install:
+  # update homebrew and install dependencies
+  - brew update
+  - brew install dpkg ldid
+  
+  # install theos
+  - git clone --recursive git://github.com/theos/theos.git ~/theos
+
+script:
+  # build!
+  - make

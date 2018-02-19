@@ -1,0 +1,9 @@
+Package: com.ioscreatix.littlex
+Name: LittleX
+Depends: mobilesubstrate, preferenceloader
+Version: 1.3.4
+Architecture: iphoneos-arm
+Description: iPhoneX Features for Non-X Devices on iOS 11
+Maintainer: iOS Creatix
+Author: iOS Creatix
+Section: Tweaks
