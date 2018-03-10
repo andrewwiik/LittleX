@@ -198,6 +198,9 @@ static void bundleIdentifierBecameHidden(NSString *bundleIdentifier) {
 
 
 %hook SBAppSwitcherSettings
+-(long long)switcherStyle {
+	return 1;
+}
 - (NSInteger)effectiveKillAffordanceStyle {
 	if (switcherKillStyle == 0) return %orig;
 	return 2;
