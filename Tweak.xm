@@ -1268,7 +1268,7 @@ int uname(struct utsname *);
     }
 
     Loader();
-    if (isEnabledInApp) {
+    if (isEnabledInApp && ![NSBundle.mainBundle.bundleIdentifier isEqualToString:@"com.apple.MediaPlayer.RemotePlayerService"]) {
     	%init(MG);
     }
     %init;
